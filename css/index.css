@@ -1,0 +1,825 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header li {
+    font-size: 16px;
+    list-style: none;
+    text-transform: capitalize;
+    padding: 8px;
+    display: inline-block;
+}
+
+.header a {
+    text-decoration: none;
+    color: #BBE9FF;
+}
+
+.header {
+    background-color: rgba(64, 62, 62, 0.575);
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    z-index: 10;
+}
+
+.inner-header {
+    float: right;
+    margin-right: 100px;
+}
+
+.line,
+.line-1,
+.line-2,
+.line-3 {
+    position: absolute;
+    background-color: #FFFED3;
+    width: 45px;
+    height: 2px;
+    margin-top: 30px;
+    margin-left: 850px;
+}
+
+.header-logo {
+    position: absolute;
+    margin-left: 60px;
+}
+
+.header-logo img {
+    width: 80px;
+    height: 40px;
+}
+
+/* end of heder  */
+
+.home {
+    height: 100vh;
+    background-image: url(../Images/bench-accounting-C3V88BOoRoM-unsplash.jpg);
+    position: relative;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.home-overly {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+}
+
+.home-content {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.home-title {
+    color: aliceblue;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.home-desc {
+    color: rgb(180, 180, 168);
+    margin-top: 10px;
+}
+
+.btn {
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 10px;
+    margin: 10px;
+    border: 0;
+    border-radius: 6px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.btn-1 {
+    background-color: #B1AFFF;
+}
+
+.btn-2 {
+    background-color: #FFFED3;
+    color: #000;
+}
+
+.btn:hover {
+    opacity: .6;
+}
+
+
+/* end of home */
+
+.welcome {
+    height: 70vh;
+}
+
+.welcome-title,
+.fw-title,
+.why-title {
+    text-align: center;
+    margin-top: 200px;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.line-1 {
+    margin-top: 60px;
+    margin-left: 710px;
+    height: 4px;
+    background-color: rgb(87, 87, 219);
+}
+
+.welcome-content {
+    border: 1px solid rgb(0, 0, 0);
+    width: 22%;
+    position: relative;
+    float: left;
+    margin: 40px 8%;
+    padding: 40px 20px;
+}
+
+.dd {
+    margin: 40px 1%;
+}
+
+.welcome-content h4 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.welcome-content i {
+    font-size: 40px;
+    color: rgb(112, 112, 209);
+    margin-left: 120px;
+    padding-bottom: 10px;
+}
+
+.welcome-content p {
+    text-align: center;
+    color: rgb(112, 112, 209);
+    padding-bottom: 10px;
+}
+
+.welcome-content a {
+    text-decoration: none;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 350%);
+    width: 100%;
+    color: #BBE9FF;
+    z-index: 10;
+}
+
+
+.welcome-content::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+}
+
+.welcome-content:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    transition: 1s;
+}
+
+.welcome-content:hover h4 {
+    color: #ffffff;
+}
+
+/* end of welcome */
+
+.featured-works {
+    height: 150vh;
+    background-color: rgb(226, 226, 226);
+    padding-top: 100px;
+}
+
+.fw-title {
+    margin-top: 0;
+}
+
+.fw-items {
+    padding-left: 6%;
+    position: relative;
+
+}
+
+.fw-overly {
+    background-color: rgba(149, 149, 149, 0);
+    width: 320px;
+    height: 320px;
+    position: absolute;
+    margin: -10px -10px;
+    z-index: 10;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.overly-content {
+    opacity: 0;
+}
+
+.fw-overly:hover {
+    background-color: rgba(149, 149, 149, .7);
+}
+
+.fw-overly:hover .overly-content {
+    opacity: 1;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.fw-overly h5 {
+    font-size: 25;
+    color: #FFE9D0;
+}
+
+.fw-overly p {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.fw-overly .search,
+.user {
+    background-color: #FFE9D0;
+    width: 40px;
+    height: 40px;
+    float: left;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.fw-overly .search {
+    margin-left: 110px;
+    margin-right: 20px;
+}
+
+.fw-overly a {
+    font-size: 20px;
+    color: #8c7b68;
+}
+
+.fw-item {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    margin: 50px 95px;
+    position: relative;
+}
+
+.fw-item-center {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.fw-content {
+    text-align: center;
+}
+
+.fw-content img {
+    height: 100%;
+    width: 85%;
+}
+
+.courses {
+    height: 55vh;
+}
+
+.courses-logo {
+    padding-bottom: 100px;
+}
+
+.courses-content {
+    margin: 20px 8%;
+    padding: 20px 10px;
+}
+
+.courses-content h4 {
+    display: inline;
+    margin-left: 7px;
+
+}
+
+.courses-content i {
+    display: inline;
+    margin-left: 10px;
+}
+
+.courses-content p {
+    padding-top: 20px;
+    text-align: left;
+    margin-left: 60px;
+}
+
+.ff {
+    margin: 20px 1%;
+}
+
+
+/* end of courses */
+.why-title {
+    text-align: left;
+    margin-left: 100px;
+    padding-bottom: 20px;
+}
+
+.line-2 {
+    margin-top: -18px;
+    margin-left: 100px;
+    height: 4px;
+    background-color: rgb(87, 87, 219);
+}
+
+.why-paragraph {
+    margin-left: 100px;
+    font-weight: normal;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.why-image {
+    text-align: right;
+    margin-right: 400px;
+    margin-bottom: 20px;
+    margin-top: -270px;
+}
+
+.why-image img {
+    width: 30%;
+    height: 50%;
+}
+
+.dot {
+    background-color: rgb(87, 87, 219);
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    float: right;
+    margin: 0 6px;
+}
+
+.dot-2 {
+    background-color: rgb(172, 172, 175);
+}
+
+.dot-2:hover {
+    background-color: rgb(87, 87, 219);
+}
+
+.dots {
+    margin: 30px 520px;
+}
+
+.why-checkbox {
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+.why-checkbox i {
+    color: rgb(87, 87, 219);
+    padding-right: 2px;
+}
+
+/* end of why */
+
+.awards {
+    height: 40vh;
+    background-image: url(../Images/course-1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 175px;
+    margin-bottom: 175px;
+    position: relative;
+}
+
+.awards-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.awards-content {
+    padding-right: 100px;
+}
+
+.users {
+    text-align: center;
+    margin: 15vh;
+    float: right;
+}
+
+.users i {
+    font-size: 40px;
+    color: #B1AFFF;
+    margin-bottom: 10px;
+}
+
+.users h4 {
+    font-size: 35px;
+    color: #ffffff;
+}
+
+.users p {
+    color: #ffffff;
+}
+
+/* end of  awards*/
+
+.pricing {
+    height: 70vh;
+}
+
+.pricing-cards {
+    padding-right: 100px;
+}
+
+.card {
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+    text-align: center;
+    position: relative;
+    float: right;
+    margin-right: 90px;
+}
+
+.card-title {
+    text-transform: uppercase;
+    color: #B1AFFF;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.circle {
+    border: 1px solid #B1AFFF;
+    border-radius: 40px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    margin: auto;
+    padding-top: 20px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+.circle-title {
+    font-size: large;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.tt {
+    font-size: 15px;
+}
+
+.card-paragraph {
+    font-size: 18px;
+    margin-top: 5px;
+    color: rgb(87, 87, 219);
+}
+
+.card-buy {
+    border: 2px solid rgb(87, 87, 219);
+    width: 100px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.card-buy .buy-title {
+    font-size: 17px;
+}
+
+.card::after {
+    position: absolute;
+    content: "";
+    /* z-index: -1; */
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+}
+
+.card:hover::after {
+    height: 100%;
+    opacity: .4;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.card:hover .card-title {
+    color: #BBE9FF;
+}
+
+.card:hover .circle-title {
+    color: #BBE9FF;
+    transition: 2s;
+}
+
+/* end of pricing */
+.team {
+    height: 40vh;
+    margin-top: 0;
+    background-image: url(../Images/aaa.png);
+}
+
+.team-info {
+    text-align: left;
+    color: #B1AFFF;
+    width: 450px;
+    height: 150px;
+    position: relative;
+    padding: 10px;
+    float: right;
+    margin-right: 125px;
+    margin-top: 75px;
+}
+
+.team-info-image img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    position: absolute;
+}
+
+.team-info-card {
+    margin-left: 20px;
+}
+
+.team-info-name,
+.team-info-position {
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+.team-info-card p {
+    margin-top: 40px;
+    color: #ffffff;
+}
+
+.team-info-name {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+/* end of team sec */
+
+.our-team {
+    width: 80%;
+    margin: auto;
+}
+
+.line-3 {
+    margin-top: 60px;
+    margin-left: 570px;
+    background-color: rgb(87, 87, 219);
+    height: 5px;
+}
+
+.our-team-content {
+    margin-top: 50px;
+}
+
+.our-team-item {
+    float: left;
+    background-color: #B1AFFF;
+    width: 30%;
+    padding: 12px 15px;
+    text-align: center;
+    position: relative;
+}
+
+.our-team-item img {
+    width: 200px;
+    height: 200px;
+}
+
+.oo {
+    margin: 0 5%;
+}
+
+.our-team-image {
+    background-color: #B1AFFF;
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+.our-team-image img {
+    width: 100%;
+}
+
+.our-team-overly {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    z-index: 10;
+}
+
+.our-team-item:hover .our-team-overly {
+    visibility: visible;
+}
+
+.our-team-overly a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(87, 87, 219);
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: auto;
+}
+
+.our-team-overly a i {
+    line-height: 40px;
+}
+
+.our-team-item::after {
+    position: absolute;
+    content: "";
+    z-index: 0;
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+}
+
+.our-team-item:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+    transition: 1.5s;
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+}
+
+.our-team-item:hover .our-team-info {
+    color: #BBE9FF;
+    transition: 2s;
+}
+
+/* end of our team */
+
+.recent {
+    margin: 500px auto 0 auto;
+    width: 80%;
+    height: 60vh;
+}
+
+.recent-content {
+    margin: 50px 0;
+}
+
+.recent-item {
+    width: 30%;
+    padding: 0 30px;
+    position: relative;
+    float: right;
+}
+
+.rr {
+    margin: 0 5%;
+}
+
+.recent-item::after {
+    position: absolute;
+    content: "";
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: #B1AFFF;
+    opacity: 0;
+}
+
+.recent-item:hover::after {
+    height: 100%;
+    opacity: .5;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.recent-desc i {
+    display: inline;
+    color: rgb(87, 87, 219);
+}
+
+.recent-desc h6 {
+    display: inline;
+    margin-right: 7px;
+}
+
+.recent-desc {
+    padding: 10px 0;
+}
+
+.recent-info h4 {
+    font-size: 25px;
+}
+
+.recent-info p {
+    text-transform: lowercase;
+    margin: 15px 0;
+}
+
+.recent-info a {
+    text-decoration: none;
+    margin: 10px 0;
+    color: rgb(87, 87, 219);
+}
+
+.recent-info {
+    padding: 15px 0;
+}
+
+/* end of recent */
+
+.footer {
+    width: 100%;
+    background-color: #BBE9FF;
+    text-align: center;
+    padding: 40px 0;
+    margin: 75px auto 0 auto;
+}
+
+.footer-links {
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.footer-circle {
+    background-color: #B1AFFF;
+    width: 60px;
+    height: 60px;
+    display: inline;
+    border-radius: 30px;
+}
+
+.footer-circle a i {
+    line-height: 60px;
+}
+
+.footer-circle a {
+    margin: 10px;
+    color: #ffffff;
+}
